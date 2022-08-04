@@ -1,0 +1,25 @@
+algorithm sentence 
+var c:char;
+var Nc ,Nw,Nv :integer;
+begin
+    WHILE (c<>"" or c<>".") do
+        write ("enter the sentence");
+        read (c);
+        IF( c="a"or c="e" or c="i"or c="o"or c="u"or c="y") THEN
+        write ("vowel number");
+            Nv:=Nv+1;
+        
+            
+        ELSE
+        write ("consonant number");
+        Nc:=Nc+1;
+            
+        
+        END_IF
+        
+    END_WHILE
+    WHILE( c==""or c==".") DO
+     write("word number");
+        Nw:=Nw+1;
+    END_WHILE
+end    
